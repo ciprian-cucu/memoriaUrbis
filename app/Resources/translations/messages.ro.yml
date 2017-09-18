@@ -1,0 +1,82 @@
+labels:
+    fullStory: povestea completă
+pageTitles:
+    home: Cronologie povești Alba Iulia | Memoria Urbis
+    stories: Lista poveștilor | Memoria Urbis
+    argument: Despre proiectul Memoria Urbis
+menu:
+    home: Home
+    stories: Povești
+    filter:
+        label: Filtru
+        from: De la
+        to: Până la
+        apply: Aplică filtru
+        any: Oricare
+    argument: Argument
+    search: Caută
+innerTitles:
+    clearFilter: Anulează filtrul
+    filterZero: nu există povești pentru filtrul selectat
+    clearSearch: Anulează căutarea
+    searchZero: nu există povești pentru căutarea realizată
+    home:
+        main: Cronologie povești
+        secondaryAll: toate poveștile
+        secondary: povești
+    stories:
+        main: Lista poveștilor
+        secondaryAll: Toate poveștile
+        secondary: povești
+        searchFor: Căutare -
+    story:
+        period: "Perioada: cca. "
+        previous: Povestea anterioară
+        next: Povestea următoare
+        photoGallery: Galerie foto (click pe imagine pentru deschidere)
+        moreImages: Mai multe imagini:
+        largeMap: Deschide harta la dimensiune mare
+argument:
+    main: Argument
+    secondary: Despre proiect și echipa noastră
+    abstract: |
+        Alba Iulia zilelor noastre are în spatele său o tradiţie de viaţă urbană de două milenii. Într-o existenţă atât de îndelungată, pe platourile sale s-au succedat tot atâtea generaţii de monumente, cât şi mulţimea secolelor care s-au scurs. <br>
+        Doar că din cele două oraşe întemeiate aici de autoritatea romană, a rămas doar unul.
+    text: |
+        <p>În evul întunecat, apoi în veacuri tot mai bine cunoscute pe măsură ce ne apropiem de modernitate, s-a manifestat un adevărat război al civilizaţiilor, fiecare putere laică sau bisericească înălţându-şi ansamblul de edificii pe seama celor care aparţinuseră regimurilor precedente. O dovadă elocventă a acestor deprinderi este prezenţa blocurilor de piatră ale castrului roman în clădiri datând din epocile ulterioare. Practicile ca atare nu aveau însă în ele nimic condamnabil câtă vreme omenirea nu ajunsese încă la conştiinţa preţuirii vestigiilor.</p>
+        <p>În perioada romană au existat aici două oraşe cu numele de Apulum, ocupând fiecare o suprafaţă întinsă în zonele sudice şi estice ale Alba Iuliei actuale. Din ele nu s-au păstrat sau n-au fost încă descoperite decât puţine elemente. Aşezările civile de la Apulum, constituite în jurul castrului Legiunii a XIII-a Gemina, au format cel mai important centru urban al Daciei Romane. Ele erau înzestrate cu construcţii publice şi private similare celor din provinciile centrale ale Imperiului Roman: palate, temple, amfiteatre, terme şi locuinţe. Din toate acestea mai sunt astăzi vizibile doar zidul sudic de incintă străbătut de poarta principală – porta praetoria -, apoi principia, sediul cartierului general al castrului şi o locuinţă civilă exterioară.</p>
+        <p>Epoca de înflorire urbană la Apulum a durat mai puţin de două secole. Ea a fost întreruptă de năvălirile brutale ale popoarelor migratoare cărora nu le era comună practica construcţiilor, dar care s-au folosit de edificiile romane ajunse în ruină.</p>
+        <p>După şase secole de decădere, reintrarea în istorie s-a produs timid, prin cele două biserici timpurii: o rotondă şi o basilică de tip răsăritean construite în colţul sud-vestic al fostului castru de legiune. Aici s-au pus bazele viitorului centru episcopal în jurul căruia s-a dezvoltat în timp o intensă viaţă urbană şi s-au înălţat zidurile unei alte fortificaţii pe ruinele castrului roman. Până în secolul al XIV-lea, catedrala romano-catolică de la Alba Iulia a fost cea mai mare construcţie religioasă din Transilvania. Clădirea prepoziturii, alte biserici, cea mai cunoscută fiind biserica Sfântul Ştefan a Ordinului augustinienilor eremiţi, numită mai târziu biserica Báthory, mânăstirile şi locuinţele arhidiaconilor completau arhitectura Cetăţii.</p>
+        <p>În secolul al XVI-lea, Alba Iulia a devenit capitala politică a Transilvaniei. Momentul a determinat înnoirea arhitecturii oraşului cu unele clădiri reprezentative: capela Lázó şi palatul princiar. În ultimii ani ai acestui veac, Mihai Viteazul şi-a legat numele de cel al oraşului Alba Iulia. Domnitorul a ctitorit biserica şi reşedinţa mitropolitană ortodoxă, demolate după un timp în împrejurarea construirii cetăţii austriece.</p>
+        <p>Secolul al XVII-lea reprezintă pentru oraş o epocă de înflorire. Atunci a fost construit Colegiul Academic, a fost refăcută fortificaţia prin ridicarea a două bastioane pe latura sudică şi s-au desfăşurat lucrări de aducţiune a apei şi de canalizare.</p>
+        <p>Integrarea Transilvaniei în Imperiul Habsburgic a adus alte schimbări în viaţa Alba Iuliei, inclusiv în plan urbanistic şi militar. La începutul secolului al XVIII-lea au fost demolate clădirile din apropierea zidurilor de incintă şi au fost dislocate comunităţile civile din jurul cetăţii în scopul creării spaţiului de construcţie pentru fortificaţia bastionară de tip Vauban.</p>
+        <p>Existenţa urbană a început să se extindă în oraşul de jos, Cetatea recuperându-şi destinaţia militară, asemenea castrului roman de altădată.</p>
+        <p>Viaţa civilă şi cea religioasă au mai pulsat în câteva centre: Biblioteca Batthyaneum instalată în fosta biserică a Ordinului Trinitarienilor, catedrala romano-catolică, palatul episcopal, seminarul romano-catolic (Seminarium Incarnatae Sapientiae). </p>
+        <p>Au fost ridicate sau au trecut prin procese de reconstrucţie unele clădiri necesare administraţiei sau armatei austriece: casa camerală, casa scaunelor săseşti, manutanţa. Amplificată şi încadrată în normele arhitecturii baroce, Casa Apor a devenit Palatul Apor, pentru un timp sediul Comandamentului General al garnizoanei. Fostul Palat al Principilor a devenit clădirea arsenalului.</p>
+        <p>Secolul al XIX-lea a adus o modernizare arhitectonică a spaţiului interior al Cetăţii, proces determinat de revenirea la funcţia sa militară. Au fost înălţate noi edificii impozante: pavilionul ofiţerilor (1853), cazarma Regimentului de Pionieri „Franz Joseph” (1898), cazinoul ofiţerilor, noua clădire a spitalului militar şi popota (1900). Şi Episcopia Romano-Catolică s-a înscris în acest program de înnoire edilitară. Pe locul bisericii Báthory, al cărei edificiu stătea de multă vreme abandonat, a fost construit localul Gimnaziului Superior Romano-Catolic Majláth (1899), iar trei ani mai târziu, în 1902, a apărut clădirea noului Ierihon.</p>
+        <p>Oraşul de jos a evoluat, dobândind treptat trăsăturile unui adevărat centru urban. Sistematizarea a dat contur cartierelor cunoscute încă din secolul al XVIII-lea sub denumirile de Lipoveni, Heiuş, German (Maieri) şi Unguresc. Acestea s-au extins, concomitent configurându-se trama stradală şi pieţele. A avut loc o intensă activitate constructivă în plan religios. Au apărut biserica Maieri II (1715), biserica din Lipoveni (1752), biserica grecilor (1794) şi biserica Maieri I (1795).</p>
+        <p>În secolul al XIX-lea, evoluţia a fost impulsionată şi de dezvoltarea economică a zonei. Au apărut obiective industriale şi din domeniul transporturilor, precum fabrica de spirt Adolf Jonas (1866), gara (1868), moara Johanna (1894) şi uzina electrică (1898). În paralel s-au edificat clădiri cu funcţie administrativă şi judecătorească (primăria, 1845, orfelinatul, 1898 şi Palatul de Justiţie, 1908), comercială (hotelul Europa, circa 1870, hotelul Hungaria, 1887) şi religioasă (biserica evanghelică-luterană, 1826, sinagoga veche, 1840, biserica franciscană, 1843, biserica, mânăstirea călugăriţelor din Ordinul Sf. Vincenţiu şi Şcoala de fete pe care o îngrijeau acestea, 1858, biserica reformată, 1861, sinagoga nouă, 1883.</p>
+        <p>Primele decenii ale administraţiei româneşti au adus cu ele înălţarea unor obiective simbolice: Catedrala Încoronării, Liceul „Mihai Viteazul” şi obeliscul „Horea, Cloşca şi Crişan”. Opţiunea pentru amplasamentul Catedralei Încoronării a impus însă un preţ plătit prin demolarea sediului comandamentului, a străzii Mikó şi a unei părţi însemnate din zidul vestic al Cetăţii. Axul est-vest al catedralei a fost gândit să ofere coordonata construirii celei mai mari zone a oraşului românesc, pe Platoul Romanilor. Prima etapă a acestui proiect a constat în ridicarea localului Liceului Mihai Viteazul. Aparent fără vreo legătură cu proiectul urbanistic naţional din 1921-1922, în anii 60, sub regimul comunist, a fost construit cartierul de blocuri Platoul Romanilor.</p>
+        <p>O amplă modificare a peisajului urban a fost determinată de aplicarea Legii  pentru reforma agrară din 1921. În scopul consolidării elementului românesc în oraş, autorităţile au dispus operarea unor împroprietăriri în zona de protecţie a Cetăţii. În anii următori au apărut străzi noi, ai căror locuitori au fost distribuiţi după criterii corporatiste sui-generis. Strada numită şi atunci şi acum Aurel Vlaicu, a fost destinată subofiţerilor şi maiştrilor militari. Spre est, la poalele Cetăţii, s-a conturat bulevardul Brătianu, distribuit azi între străzile Octavian Goga, Decebal şi Nicolae Bălcescu. Pe laturile bulevardului de atunci au apărut locuinţele unor categorii mai bine situate, avocaţi, medici, profesori, funcţionari.</p>
+        <p>Într-o perspectivă mai îndelungată, succesiunea regimurilor de putere şi a evenimentelor şi-a pus amprenta în mod negativ asupra monumentelor, atât în Cetate, cât şi în oraşul de jos. În perioada Principatului (1541-1699), calvinii au distrus frescele din biserica Sfântul Mihail şi o parte semnificativă a patrimoniului interior al locaşului de cult. Instaurarea stăpânirii habsburgice în Transilvania nu a răsturnat această tendinţă. Noile construcţii militare au determinat distrugerea a ceea ce mai rămăsese din porţile castrului roman, a porţilor cetăţii medievale şi a unor clădiri cu valoare ambientală.</p>
+        <p>Consolidarea identităţilor naţionale în secolul al XIX-lea a stimulat interesul pentru clădirile istorice ca expresii ale acestor identităţi. A apărut preocuparea pentru conservarea, restaurarea şi punerea în valoare a unor edificii încărcate cu o astfel de semnificaţie. Totuşi, n-au fost puţine momentele în care regimurile politice şi interesele economice au contrazis tendinţa reliefată aici, nimicind patrimoniul imobiliar urban.</p>
+        <p>Două ansambluri arhitectonice au căzut pradă distrugerilor în jurul anului 1900: cel al monetăriei şi cel al locaşului de cult al eremiţilor augustinieni (biserica Báthory). Dacă autoritatea episcopală catolică a dispus demolarea bisericii Báthory motivată de lipsa spaţiului necesar construirii localului unei noi instituţii şcolare, pentru lichidarea clădirilor monetăriei nu există nicio raţiune edilitară evidentă.</p>
+        <p>Dar perioada în care distrugerea patrimoniului imobiliar a devenit o politică de stat a fost cea a regimului comunist. În Alba Iulia a dispărut, între altele, centrul oraşului de jos, cu cele două careuri ale Pieţei Mihai Viteazul. În Cetate s-a manifestat o ignoranţă şi o indiferenţă deopotrivă de periculoase. Impresia era aceea că autorităţile aşteaptă prăbuşirea monumentelor.</p>
+        <p>După 1990, aplicarea unor proiecte de restaurare a fost de natură să hrănească speranţele localnicilor, ale vizitatorilor români şi străini ai Alba Iuliei. Însă adevărata stare de siguranţă a monumentelor oraşului ţine încă de domeniul viitorului. De exemplu, retrocedarea imobilelor confiscate după 1948 a fost de natură să readucă într-o ordine firească regimul proprietăţii. Dar ignorarea de către deţinători a normelor plasticii arhitectonice duce la distrugerea ancadramentelor şi la alterarea faţadelor multor clădiri cu valoare ambientală.</p>
+        <p>Argumentul nostru constituie o pledoarie pentru conservarea acelor valori care reflectă identitatea oraşului Alba Iulia: centru urban cu o istorie îndelungată, marcată de toleranţa reciprocă a comunităţilor etnice şi de interculturalism. (Echipa proiectului)</p>
+    teamTable:
+        headerNo: Nr.
+        headerName: Numele
+        headerFunction: Funcţia în cadrul proiectului
+        historyExpert: Expert în reconstituiri istorice
+        museumExpert: Muzeograf
+        databaseExpert: Expert în baze de date
+        projectManager: Responsabil de proiect
+        graphicalExpert: Expert în fotografie și reconstituiri grafice
+
+footer:
+    projectDescription: <p>MEMORIA URBIS este un proiect finanțat de Consiliul Local şi Primăria Municipiului Alba Iulia („Alba Iulia - o istorie în imagini a oraşului prin străzile şi monumentele sale”), în perioada 2014-2019. Proiectul este desfăşurat de Universitatea „1 Decembrie 1918" din Alba Iulia (prin Departamentul de Istorie, Arheologie și Muzeologie) în parteneriat cu Muzeul Naţional al Unirii Alba Iulia.</p>
+overlay:
+    title: Istoria în imagini<br>a orașului Alba-Iulia
+    text: Glisați stânga/dreapta pentru a vedea poveștile și imaginile, sau accesați meniul pentru mai multe opțiuni.
+    close: Închide

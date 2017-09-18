@@ -1,0 +1,59 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Translation
+ *
+ * @ORM\Table(name="translation")
+ * @ORM\Entity
+ */
+class Translation
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lang", type="string", length=4)
+     */
+    private $lang;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="table", type="string", length=10)
+     */
+    private $table;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="entry", type="integer")
+     */
+    private $entry;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="field", type="string", length=35)
+     */
+    private $field;
+
+    /**
+     * @var text
+     *
+     * @ORM\Column(name="translated", type="text")
+     */
+    private $translated;
+}

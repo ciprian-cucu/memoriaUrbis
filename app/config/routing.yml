@@ -1,0 +1,30 @@
+root:
+    path: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:urlRedirect
+        path: /%locale%
+        permanent: true
+homepage:
+    path:   /{_locale}
+    defaults: { _controller: AppBundle:Default:home}
+    requirements:
+        _locale: ro|en
+db_test:
+    path:      /db
+    defaults:  { _controller: AppBundle:Dbtest:index }
+story_list:
+    path:     /{_locale}/story
+    defaults: { _controller: AppBundle:Default:list }
+    requirements:
+        _locale: ro|en
+story_show:
+    path:      /{_locale}/story/{no}
+    defaults:  { _controller: AppBundle:Default:show}
+    requirements:
+        no: '\d+'
+        _locale: ro|en
+argument:
+    path:     /{_locale}/argument
+    defaults: { _controller: AppBundle:Default:argument }
+    requirements:
+        _locale: ro|en

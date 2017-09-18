@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        {% block title %}<title>Memoria Urbis</title>{% endblock %}
+        {% block stylesheets %}
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display" rel="stylesheet">
+            <link href="{{ asset('bundles/app/css/swiper.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('bundles/app/css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
+
+            <link href="{{ asset('build/custom.css') }}" rel="stylesheet" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('bundles/app/js/jquery.js') }}"></script>
+            <script src="{{ asset('bundles/app/js/swiper.jquery.min.js') }}"></script>
+
+        {% endblock %}
+    </body>
+
+</html>

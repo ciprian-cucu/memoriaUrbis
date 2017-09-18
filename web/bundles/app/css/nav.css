@@ -1,0 +1,71 @@
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+nav {background: #000; font-size: 19px; font-weight: 300; line-height: 1; margin: 0; padding: 15px 0; width: 100%; display: block;}
+nav ul {list-style: none; padding: 5px 0;}
+nav li a:hover, nav li a:focus {color: #fff; background: #ed272c; text-decoration: none; }
+nav .menu-item {display: inline-block;	text-align: left; border-bottom: 1px solid rgba(255, 255, 255, 0.5);}
+
+nav a {display: block; padding: 0 20px; color: #fff; text-decoration: none; font-weight: 300; letter-spacing: -0.05em; font-size: 16px;
+    line-height: 2.75em; height: 2.75em;  font-family: "Open Sans", sans-serif;}
+
+
+nav p {color: #fff;text-decoration: none;font-weight: 300;letter-spacing: -0.05em;font-size: 14px;line-height: 1.5em;
+    height: 1.5em;font-family: "Open Sans", sans-serif;}
+
+#filter-area{width: 240px; background: #000; display: none;padding: 10px 20px;}
+
+
+/* menu overlay */
+#overlay {background: 0 0 rgba(0, 0, 0, 0.5); display: none;
+    height: 100%;    position: fixed;    top: 0; left: 0;    -moz-transition: all 0.2s linear 0s;
+    -webkit-transition: all 0.2s linear 0s;    -ms-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;    width: 100%;    z-index: 90;
+}
+
+/* media queries */
+@media only screen and (min-width: 961px) {
+    nav {background: #fff;}
+    nav a {color: #000; border-bottom: 1px solid rgba(0, 0, 0, 0.8);}
+
+}
+
+@media only screen and (max-width: 960px) {
+	.responsive-nav-icon,
+	.responsive-nav-close {
+	    display: block;
+	    position: absolute;
+	    z-index: 1;
+	}
+
+	nav {
+	    height: 100%;
+	    padding: 0px;
+	    position: fixed;
+	    top: 0; left: -400px;
+	    -moz-transition: all 0.2s linear 0s;
+	    -webkit-transition: all 0.2s linear 0s;
+	    -ms-transition: all 0.2s linear 0s;
+	    transition: all 0.2s linear 0s;
+	    width: 0;
+	}
+
+	nav.slide-in {
+	    left: 0;
+	    overflow-y: scroll;
+	    width: 75%;
+	    z-index: 100;
+	}
+
+    nav ul {
+        margin-top: 42px;
+    }
+
+	nav .menu-item {
+		display: block;
+	}
+
+    nav li:first-child a {
+       border-top: 1px solid rgba(255, 255, 255, 0.5);;
+    }
+
+}

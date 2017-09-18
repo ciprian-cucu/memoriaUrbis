@@ -1,0 +1,75 @@
+{% set route = app.request.attributes.get('_route') %}
+{% set no = 0 %}
+{% if route == 'story_show' %}
+    {% set no = app.request.attributes.get('_route_params')['no'] %}
+{% endif %}
+{% set locale = app.request.getLocale() %}
+<div class="responsive-nav-icon"><a href="#"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a></div>
+
+<div {{ route == 'homepage' ? 'class="wrap-home"' : 'class="wrap"'  }} >
+    <div id="locale">
+        <a href="{{ path(route, { '_locale': "ro",'no': no}) }}" {{ locale == 'ro' ? 'class="active"' }}>RO</a> |
+        <a href="{{ path(route, { '_locale': "en", 'no': no}) }}" {{ locale == 'en' ? 'class="active"' }}>ENG</a>
+    </div>
+    <div id="logo"><img src="{{ asset('bundles/app/images/logo.png') }}" alt="memoria urbis logo" ></div>
+
+    <nav>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="{{ path('homepage') }}" {{ route == 'homepage' ? 'class="active"' }}>{{ 'menu.home'|trans }}</a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ path('story_list') }}" {{ (route == 'story_list') or (route == 'story_show') ? 'class="active"' }}>{{ 'menu.stories'|trans }}</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" id="filter" {{ route == 'filter' ? 'class="active"' }}>{{ 'menu.filter.label'|trans }}</a>
+                <div id="filter-area">
+                    <form id="filterForm" class="smallForm" method="get"
+                        action="{{ route == 'homepage' ? path('homepage') : path('story_list') }}">
+                        <div class="formBox">
+
+                            <label for="dela">{{ 'menu.filter.from'|trans }}:</label>
+                            <div class="selectWrapper">
+                                <select name="y0" id="y0">
+                                    <option selected="selected" value='0'>{{ 'menu.filter.any'|trans }}</option>
+
+                                    {% for year in years|sort %}
+                                        <option value='{{ year['year0'] }}'>{{ year['year0'] }} </option>
+                                    {% endfor %}
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="formBox">
+                            <label for="panala">{{ 'menu.filter.to'|trans }}:</label>
+                            <div class="selectWrapper">
+                                <select name="y1" id="y1">
+                                    <option selected="selected" value='0'>{{ 'menu.filter.any'|trans }}</option>
+
+                                    {% for year in years|sort %}
+                                        <option value='{{ year['year0'] }}'>{{ year['year0'] }} </option>
+                                    {% endfor %}
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <button id="btnFilter" type="submit" class="button">{{ 'menu.filter.apply'|trans }}</button>
+                    </form>
+
+                </div>
+            </li>
+            <li class="menu-item">
+                <a href="{{ path('argument') }}" {{ route == 'argument' ? 'class="active"' }}>{{ 'menu.argument'|trans }}</a>
+            </li>
+            <li class="menu-item">
+                <form action="{{ path('story_list') }}">
+                	<input type="search" placeholder="{{'menu.search'|trans}}" name="kw">
+                    <input type="submit" style="display: none">
+                </form>
+            </li>
+
+        </ul>
+        <div class="responsive-nav-close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
+    </nav>
+</div>

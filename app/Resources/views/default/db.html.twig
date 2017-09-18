@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+                <h1><span>Welcome to</span> Symfony {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}</h1>
+            </div>
+
+
+            <div id="next">
+                <h2>DB</h2>
+                <p>
+
+                    {% for story in stories %}
+
+                        <h2>{{ loop.index }}. {{ story.title }}</h2>
+                        {% for photo in story.photos %}
+                            {{ photo.file }}
+                        {% endfor %}
+                    {% endfor %}
+                </p>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

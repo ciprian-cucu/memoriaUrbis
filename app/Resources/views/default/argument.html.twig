@@ -1,0 +1,163 @@
+{% extends 'base.html.twig' %}
+{% block title %}<title>{{ 'pageTitles.argument'|trans }}</title>{% endblock %}
+
+
+{% block body %}
+
+<header class="header" >
+    {% include 'navmenu.html.twig' %}
+</header>
+    <!-- Slider main container -->
+    <div id="content">
+        <div class="content-wrap">
+            <header>
+                {% set route = app.request.attributes.get('_route') %}
+                <h2> {{ 'argument.main'|trans|raw }}  </h2>
+                <p>{{ 'argument.secondary'|trans|raw }}</p>
+
+            </header>
+            <div id="center">
+                <section id="story">
+                    <article class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                {{ 'argument.abstract'|trans|raw }}
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            {{ 'argument.text'|trans|raw }}
+                        </div>
+                    </article>
+                </section>
+                <section id="gallery">
+                    <article class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Echipa de proiect:
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <th>{{ 'argument.teamTable.headerNo'|trans }}</th>
+                                    <th>{{ 'argument.teamTable.headerName'|trans|raw }}</th>
+                                    <th>{{ 'argument.teamTable.headerFunction'|trans|raw }}</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Călin Anghel <br>        </td>
+                                        <td>{{ 'argument.teamTable.historyExpert'|trans|raw }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Sorin Arhire <br>        </td>
+                                        <td>{{ 'argument.teamTable.historyExpert'|trans|raw }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Horia Bărdaş <br>        </td>
+                                        <td>{{ 'argument.teamTable.museumExpert'|trans|raw }} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Ileana Burnichioiu <br>        </td>
+                                        <td>{{ 'argument.teamTable.historyExpert'|trans|raw }} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Ciprian Cucu <br>        </td>
+                                        <td>{{ 'argument.teamTable.databaseExpert'|trans|raw }}     </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Smaranda Cutean <br>     </td>
+                                        <td>{{ 'argument.teamTable.museumExpert'|trans|raw }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Lucian Dumitru Dărămuș <br> </td>
+                                        <td>{{ 'argument.teamTable.historyExpert'|trans|raw }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Rareş Diodiu <br>        </td>
+                                        <td>{{ 'argument.teamTable.museumExpert'|trans|raw }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Eva Mârza <br>        </td>
+                                        <td>{{ 'argument.teamTable.historyExpert'|trans|raw }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Valer Moga <br>      </td>
+                                        <td>{{ 'argument.teamTable.historyExpert'|trans|raw }} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Cosmin Popa Gorjanu <br>     </td>
+                                        <td>{{ 'argument.teamTable.historyExpert'|trans|raw }} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Cristian Ioan Popa  <br>      </td>
+                                        <td>{{ 'argument.teamTable.historyExpert'|trans|raw }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Laura Stanciu <br>       </td>
+                                        <td>{{ 'argument.teamTable.projectManager'|trans|raw }} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Alexandru Ştirban <br>       </td>
+                                        <td>{{ 'argument.teamTable.museumExpert'|trans|raw }} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Călin Achim Şuteu  <br>       </td>
+                                        <td>{{ 'argument.teamTable.graphicalExpert'|trans|raw }} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Maria Zgârciu <br>       </td>
+                                        <td>{{ 'argument.teamTable.museumExpert'|trans|raw }} </td>
+                                    </tr>
+                                </tbody>
+                                </table>
+
+
+                        </div>
+
+                    </article>
+                    <article id="proiect">
+                            <img id="img0" src=" {{ asset('bundles/app/images/logoAlba.png') }} " >
+                            {{ 'footer.projectDescription' | trans | raw }}
+
+                    </article>
+                </section>
+
+
+
+
+            </div>
+            <div id="footer">
+
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script src="{{ asset('bundles/app/js/custom.js') }}"></script>
+{% endblock %}

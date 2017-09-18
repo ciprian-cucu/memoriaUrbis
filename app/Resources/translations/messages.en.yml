@@ -1,0 +1,78 @@
+labels:
+    fullStory: full story
+pageTitles:
+    home: Timeline of Alba Iulia Stories | Memoria Urbis
+    stories: Stories list | Memoria Urbis
+    argument: About Memoria Urbis
+menu:
+    home: Home
+    stories: Stories
+    filter:
+        label: Filter
+        from: From
+        to: To
+        apply: 'Apply filter'
+        any: Any
+    argument: Manifesto
+    search: Search
+innerTitles:
+    clearFilter: clear filter
+    filterZero: there are no stories that match your filter
+    clearSearch: clear search
+    searchZero: there are no stories that match your search
+    home:
+        main: Stories timeline
+        secondaryAll: all stories
+        secondary: stories
+    stories:
+        main: Stories list
+        secondaryAll: all stories
+        secondary: stories
+        searchFor: Search for -
+    story:
+        period: "Period: approx. "
+        previous: Previous story
+        next: Next story
+        photoGallery: Photo gallery (click on an image to open)
+        moreImages: More images:
+        largeMap: Open large size map
+argument:
+    main: Manifesto
+    secondary: About the project and the team behind it.
+    abstract: |
+        Present Alba Iulia has a tradition of urban life stretching back for two millennia. During such a lengthy existence, as many generations of monuments succeeded one another on its surface as the number of its centuries. However, of the two cities founded here by the Roman authorities, there is nowadays only one.
+    text: |
+        <p>During the Middle Ages, and later, during ever better known centuries as we draw nearer the Modern Age, a sort of war of civilizations took place; each lay or ecclesiastic power building their own constructions after erasing the ones erected by previous regimes. A telling proof of this pattern is the presence of stones of the Roman fortress in buildings constructed later. However, since humankind had not yet developed the sense of appreciation of historical vestiges, such practices should not be judged too severely.
+        </p><p>On the southern and eastern part of today Alba Iulia, during Roman period, existed two cities with the name Apulum. There are very few remnants of these cities discovered so far. The civilian settlements coalesced near XIII Gemina legion’s fortress grew to become the most important urban center of Roman Dacia. There existed public and private edifices similar to those of the central provinces of the Roman Empire, such as palaces, temples, amphitheaters, baths, and houses. Only the southern wall of the Roman fortress with the main gate, porta praetoria, then principia, the legion’s headquarters and a civilian house located outside the precincts are still extant. The urban blossoming of Apulum lasted only two centuries. It was disrupted by the brutal invasions of migrating peoples, which were unaccustomed with construction practice, but took advantage of the ruined Roman edifices.
+        </p><p>After six centuries of decay, the return to urban life began hesitantly with the two early churches: a rotunda and an eastern type basilica erected in the southwestern corner of the former legionary fortress. A new episcopal seat was established here. Around this center developed later an intense urban life and a new fortification was built on the walls of the previous one. Until fourteenth century, the Roman Catholic cathedral from Alba Iulia was the largest religious edifice in Transylvania. The architecture of the fortress included the provost’s house, other churches, the most famous of which was St. Stephen Protomartyr of the Augustinian hermits, latter known as Báthory church, and the dwellings of archdeacons.
+        </p><p>In sixteenth century, Alba Iulia became political capital of Transylvania. During this time, the architecture of the city was enriched with several exemplary edifices, such as Lázó chapel and the palace of the princes of Transylvania. In the last years of that century, Michael the Brave tied his name to that of Alba Iulia. The prince has founded the Orthodox metropolitan seat, which was demolished after more than a century, during the construction of the Habsburg fortification.
+        </p><p>The seventeenth century was a time of prosperity for Alba Iulia. It was the time when the academic college was established, the fortification was enlarged by adding two bastions on the southern side and a new system of water supply and sewage was constructed.
+        </p><p>The incorporation of Transylvania in the Habsburg Empire caused other changes in the life of Alba Iulia, including those of military and urbanist kind. At the beginning of eighteenth century, the edifices located near the precincts of the new fortress were demolished and the civilian population around the fortress was dislocated in order to make room for the Vauban bastioned fortress. The urban life developed in the lower part of the city, while the fortress regained the military function, like that of the ancient Roman fortress. Civilian and religious activities continued in several spots: Batthyaneum Library, located in the former church of Trinitarian order, the Roman Catholic cathedral, bishop palace, and Roman Catholic seminary (Seminarium Incarnatae Sapientiae).
+        </p><p>Some buildings needed by the Austrian army and administration were either reconstructed or erected anew, such as the Chamber Hall, the Hall of Saxon Seats, Storehouse. After being enlarged and decorated in Baroque style, Apor House became Apor Palace, which for a while was the residence of the general commander of the garrison. The former Palace of Princes became the arsenal.
+        </p><p>Nineteenth century brought an architectural modernization of the inner part of the fortress. This process was governed by its military function. New imposing edifices were erected: Officers Pavilion (1853), Barracks of “Franz Joseph” Engineers Regiment (1898), officers casino, the new building of the military hospital and the officers’ mess. The Roman Catholic Bishopric participated in the program of architectural modernization. On the site of the former Báthory church, which stood abandoned for some time, the new edifice of the Roman Catholic Majláth Superior Gymnasium was erected (1899) and three years later, in 1902, appeared the new Jericho building.
+        </p><p>The lower city developed receiving gradually the features of a real urban center. The systematization shaped the neighborhoods known since nineteenth century: Lipoveni, Heiuș, German (Maieri) and Hungarian. These neighborhoods expanded and the street texture and squares appeared. New churches were erected, so that there appeared the following: Maieri II (1715), Lipoveni (1752), Greeks’ church (1794) and Maieri I (1995).
+        </p><p>In nineteenth century, the economic development was the main engine of the evolution in this city. New industrial and transports businesses were established, such as Adolf Jonas alcohol factory (1866), train station (1868), Johana mill (1894), and the power station (1898). Concomitantly, administrative and judicial buildings (City Hall 1845, orphanage 1898, and the Palace of Justice, 1908), or commercial (Europa hotel, ca. 1870, Hungaria Hotel, 1887), and religious (Lutheran Church, 1826, Old Sinagogue, 1840, Fransiscan church, 1843, the monastery of the nuns of St. Vincent order and the girls school, 1858, Reformed Calvinist church, 1861, and new synagogue, 1883) were constructed.
+        </p><p>The first decades of Romanian administration brought the erection of symbolic edifices: Coronation Cathedral, “Mihai Viteazul” High School, and “Horea, Cloșca, and Crișan” Obelisk. The choice of the location for the Coronation Cathedral required the demolition of the Commander’s headquarters, Mikó street, and a segment of the western wall of the fortress. The east-west axis of the cathedral was meant to offer the coordinate for the construction of the largest area of the Romanian town, on Platoul Romanilor (Romans Plateau). The first stage of this plan included the construction of “Mihai Viteazul High School.” Apparently, unconnected to the national urban plans of 1921-22, in 1960s, during the Communist regime, the new blocks neighborhood Platoul Romanilor was constructed.
+        </p><p>A broad change of the urban landscape was generated by the implementation of the Bill for agrarian reform of 1921. Aiming to consolidate the Romanian component of the city dwellers, the authorities ordered the allotment in the protection area of the fortress. In the next years, appeared new streets whose inhabitants belonged to various professional categories. For example, military technicians and non-commissioned officers received allotments on Aurel Vlaicu Street. To the east, below the fortress, took shape Brătianu bulevard, situated between the current Octavian Goga, Decebal, and Nicolae Bălcescu streets. On the sides of Brătianu boulevard later were constructed the houses of better-off categories, such as lawyers, physicians, teachers, and civil servants.
+        </p><p>Considering the evolutions of several centuries, the succession of power regimes and events affected the monuments both within the fortress as well as in the lower city. In the age of Principality (1541-1699), Calvinists destroyed the frescoes of St. Michael church and a significant part of the inner inventory of the church. The arrival of Habsburg domination in Transylvania did not stop this tendency. The erection of new military edifices caused the destruction of what survived from the Roman fortress, the gates of the medieval fortification and of some other buildings.
+        </p><p>The consolidation of national identities in the nineteenth century has stimulated the interest for historical buildings as expressions of these identities. There appeared the preoccupation for the conservation, restoration and valorization of historical edifices. However, there were many occasions when political regimes or economic interests have denied this tendency destroying the real urban heritage. Two architectural complexes fell prey to destructions around year 1900: the mint and church of the Augustinian hermits (Báthory church). In case of the demolition of the latter, the decision of the bishopric was motivated by the lack of space necessary for a new school. The destruction of the mint buildings had no obvious urbanistic reason.
+        </p><p>The period when destruction of immovable heritage became an official policy was that of the Communist regime. In Alba Iulia disappeared, among others, the center of the lower city, with the two squares of Mihai Viteazul Square. In the fortress, the monuments were treated with equally dangerous ignorance and indifference. The impression was that the authorities were waiting for the collapse of the monuments.
+        </p><p>After 1990, the implementation of restoration projects fed the hopes of the local inhabitants, Romanian and foreign visitors of Alba Iulia. However, the real protection of the city monuments lies in the future. For example, the retrocession of buildings nationalized after 1948 was to restore a natural order in the ownership regime. Since owners ignore the norms of architectonic decoration, the consequence is the obliteration of window frames and the change of façades of many buildings.
+        </p><p>Our argument pleads in favor of the preservation of these values reflecting the identity of Alba Iulia: an urban center with a long history, marked by mutual tolerance of ethnic communities and inter-culturalism. (The project team)</p>
+    teamTable:
+        headerNo: No.
+        headerName: Name
+        headerFunction: Posion in team
+        historyExpert: Historical reconstructions expert
+        museumExpert: Museum curator
+        databaseExpert: Databases expert
+        projectManager: Project manager
+        graphicalExpert: Photography and historical reconstructions expert
+
+
+footer:
+    projectDescription: <p>MEMORIA URBIS is a project financed by the Local Council and the City Hall of Alba Iulia ("Alba Iulia - a history in images of the city through its streets and monuments"), between 2014 - 2019. The project is implemented by the "1 Decembrie 1918 University of Alba Iulia" (through the Department of History, Archeology and Museology), in partnership with the National Union Museum of Alba Iulia.</p>
+overlay:
+    title: A history through images<br>of the city of Alba-Iulia
+    text: Slide left/right to see the stories and images, or access the menu for more options.
+    close: Close

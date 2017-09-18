@@ -1,0 +1,161 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<header class="header" >
+    {% include 'navmenu.html.twig' %}
+</header>
+    <!-- Slider main container -->
+    <div id="content">
+        <div class="content-wrap">
+            <header>
+                {% set id = story.id %}
+                {% set route = app.request.attributes.get('_route') %}
+                <h2> {{ story.order }}. {{ story.title|raw }} </h2>
+                <p>
+                    {{'innerTitles.story.period'|trans}}{{ story.y0 }}
+                    {% if story.order > 1 %}
+                        | <a href="{{ path(route, {'no': story.order-1}) }}">{{'innerTitles.story.previous'|trans}}</a>
+                    {% endif %}
+                    {% if story.order < storiesNo %}
+                        | <a href="{{ path(route, {'no': story.order+1}) }}">{{'innerTitles.story.next'|trans}}</a>
+                    {% endif %}
+                </p>
+            </header>
+            <div id="center">
+                <section id="story">
+                    <article class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{ story.abstract|raw }}</h3>
+                        </div>
+                        <div class="panel-body storyText">
+                            <div id="fullTextButton">
+                                <a href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i><i class="fa fa-chevron-up" aria-hidden="true" style="display:none"></i> Full story</a>
+                            </div>
+                            {{ story.text|raw }}
+                        </div>
+                    </article>
+                    <article id="location" class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Locație :
+                        </div>
+                        <div class="panel-body" id="map">
+                            <script>
+                            function myMap() {
+                              var myCenter = new google.maps.LatLng({{story.lat}},{{story.long}});
+                              var mapCanvas = document.getElementById("map");
+                              var mapOptions = {center: myCenter, zoom: 17, scrollwheel: false,  gestureHandling: 'cooperative'};
+                              var map = new google.maps.Map(mapCanvas, mapOptions);
+                              var marker = new google.maps.Marker({position:myCenter});
+                              marker.setMap(map);
+                            }
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoEzYM4luNEAoszmd_zJQUnXccb-eEU2E&callback=myMap"></script>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="http://maps.google.com/?q={{story.lat}},{{story.long}}" target="_blank">{{ 'innerTitles.story.largeMap'|trans }}</a>
+                        </div>
+                    </article>
+                </section>
+
+                <section id="gallery">
+                    <article class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{ 'innerTitles.story.photoGallery'|trans }}</h3>
+                        </div>
+                        <div class="panel-body">
+                            {% set mainPhoto = 'bundles/app/images/stories/' ~ story.photos[0].getFile() %}
+                            {% set photosNo = story.photos|length %}
+                            <a data-fancybox="gallery" data-caption="{{ story.photos[0].getNotes() }}" href="{{ asset(mainPhoto) }}">
+                                <div class="gallery main"
+                                style="
+                                    background-image: url('{{ asset(mainPhoto) }}');
+                                    background-size: cover;
+                                    background-position: 0% 70%;">
+                                </div>
+                            </a>
+                            <p class="panelcaption">{{ story.photos[0].getNotes() }}</p>
+                        </div>
+                        <div class="panel-footer">
+                            {% if photosNo>1 %}
+                                <p>{{ 'innerTitles.story.moreImages'|trans }}</p>
+                                <div class="row">
+                                    {% for i in 1..photosNo-1 %}
+                                    <a data-fancybox="gallery" data-caption="{{ story.photos[i].getNotes() }}" href="{{ asset('bundles/app/images/stories/'~story.photos[i].getFile()) }}">
+                                        {% if (i==8) %}
+                                            <div class="gallery item"
+                                            style="
+                                                background-image: url('{{ asset('bundles/app/images/more_imgSM.png') }}');
+                                                background-size: cover;
+                                                background-position: 50% 50%;
+                                                ">
+                                            </div>
+                                        {% else %}
+                                            <div class="gallery item"
+                                            style="
+                                                background-image: url('{{ asset('bundles/app/images/stories/'~story.photos[i].getFile()) }}');
+                                                background-size: cover;
+                                                background-position: 0% 70%;">
+                                            </div>
+
+                                        {% endif %}
+                                    </a>
+                                        {% if (i<loop.length) and (i%2==0) %}
+                                            </div>
+                                            <div class="row {% if (i>7) %} hidden {% endif %} ">
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </article>
+                    <article id="proiect">
+                        <div id="parteneri">
+                            <img id="img0" src=" {{ asset('bundles/app/images/logoAlba.png') }} " >
+                        </div>
+                        <div id="projectDesc">
+                            {{ 'footer.projectDescription' | trans | raw }}
+                        </div>
+                    </article>
+                </section>
+
+
+
+            </div>
+            <div id="footer">
+
+
+            </div>
+
+    </div>
+    <div id="overlay2" >
+        <div class="gallery-image" style="
+            background-image: url('{{ asset(mainPhoto) }}');
+            background-size: contain;
+            background-position: center;">
+        </div>
+        <div class="gallery-text">
+            <p class="stronger">Titlu poveste. Poate ajunge să fie destul de lung, cred că avem spațiu.</p>
+            <p class="strong">Descriere poză. Aici va fi uneori chiar mai mult text, pentru că uite de-aia, avem descrieri și gata.</p>
+        </div>
+
+
+
+    </div>
+
+
+    </div>
+
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script src="{{ asset('build/app.js') }}"></script>
+    <script>
+        var photosArr = {{ story.photos|json_encode()|raw }};
+    </script>
+{% endblock %}
