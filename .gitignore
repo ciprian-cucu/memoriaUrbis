@@ -2,4 +2,7 @@
 /app/config/parameters.yml
 /composer.phar
 /vendor/
-/var/
+/var/cache
+/var/logs
+/var/sessions
+/var/bootstrap.php.cache
