@@ -131,7 +131,7 @@ class DefaultController extends Controller
                 ->andWhere('s.year0 <= :y1')
                 ->setParameter('y0', $y0)
                 ->setParameter ('y1',$y1)
-                ->orderBy('s.year0', 'ASC')
+                ->orderBy('s.storyOrder', 'ASC')
                 ->getQuery();
             $stories = $query->getResult();
 
@@ -323,6 +323,19 @@ class DefaultController extends Controller
             ->findBy(
                 array('storyOrder' => $no)
             );
+
+        //get an array of available story positions
+        $query = $em->getRepository('AppBundle:Story')->createQueryBuilder('s')
+            ->select('s.storyOrder')
+            ->orderBy('s.storyOrder', 'ASC')
+            ->getQuery();
+        $storyPositionsTemp = $query->getResult();
+        
+        $storyPositions = [];
+        foreach ($storyPositionsTemp as $position) {
+            $storyPositions[]=$position['storyOrder'];
+        }
+
         /*
         $story = $em->getRepository('AppBundle:Story')
             ->getStory($no);
@@ -382,7 +395,8 @@ class DefaultController extends Controller
                     'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
                     'story'=>$storyData,
                     'storiesNo'=>$storiesNo,
-                    'years'=>DefaultController::getYears()
+                    'years'=>DefaultController::getYears(),
+                    'storyPositions'=>$storyPositions
                 ]);
 
 

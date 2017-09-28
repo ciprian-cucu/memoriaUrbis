@@ -9,16 +9,22 @@
     <div id="content">
         <div class="content-wrap">
             <header>
+                {% set k = 1 %}
+                {% for key,value in storyPositions %}
+                    {% if (value == story.order ) %}
+                        {% set k = key %}
+                    {% endif %}
+                {% endfor %}
                 {% set id = story.id %}
                 {% set route = app.request.attributes.get('_route') %}
-                <h2> {{ story.order }}. {{ story.title|raw }} </h2>
+                <h2> {{ story.title|raw }} </h2>
                 <p>
                     {{'innerTitles.story.period'|trans}}{{ story.y0 }}
                     {% if story.order > 1 %}
-                        | <a href="{{ path(route, {'no': story.order-1}) }}">{{'innerTitles.story.previous'|trans}}</a>
+                        | <a href="{{ path(route, {'no': storyPositions[k-1]}) }}">{{'innerTitles.story.previous'|trans}}</a>
                     {% endif %}
                     {% if story.order < storiesNo %}
-                        | <a href="{{ path(route, {'no': story.order+1}) }}">{{'innerTitles.story.next'|trans}}</a>
+                        | <a href="{{ path(route, {'no': storyPositions[k+1]}) }}">{{'innerTitles.story.next'|trans}}</a>
                     {% endif %}
                 </p>
             </header>
@@ -110,12 +116,8 @@
                         </div>
                     </article>
                     <article id="proiect">
-                        <div id="parteneri">
-                            <img id="img0" src=" {{ asset('bundles/app/images/logoAlba.png') }} " >
-                        </div>
-                        <div id="projectDesc">
-                            {{ 'footer.projectDescription' | trans | raw }}
-                        </div>
+                        <img src=" {{ asset('bundles/app/images/parteneri.png') }} " >
+                        {{ 'footer.projectDescription'|trans|raw }}
                     </article>
                 </section>
 

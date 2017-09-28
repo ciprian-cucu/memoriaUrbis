@@ -21,7 +21,6 @@ story_show:
     path:      /{_locale}/story/{no}
     defaults:  { _controller: AppBundle:Default:show}
     requirements:
-        no: '\d+'
         _locale: ro|en
 argument:
     path:     /{_locale}/argument

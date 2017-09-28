@@ -58,9 +58,9 @@ class Story
     private $lastUpdate;
 
     /**
-     * @var integer
+     * @var decimal
      *
-     * @ORM\Column(name="story_order", type="integer", nullable=true)
+     * @ORM\Column(name="story_order", type="decimal", precision=4, scale=1, nullable=true)
      */
     private $storyOrder;
 

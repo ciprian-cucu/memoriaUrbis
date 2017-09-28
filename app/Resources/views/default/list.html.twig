@@ -41,7 +41,7 @@
                     {% for story in stories %}
                         <li class="list-entry">
                                 <p class="year">{{ story.year0 }}</p>
-                                <p class="story-title">{{story.storyOrder}}.
+                                <p class="story-title">{{ loop.index }}. 
                                     <a href="{{ path('story_show', {'no': story.storyOrder}) }}">{{ story.title|raw }}</a>
                                 </p>
                         </li>
