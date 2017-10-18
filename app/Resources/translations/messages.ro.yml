@@ -21,7 +21,7 @@ innerTitles:
     clearSearch: Anulează căutarea
     searchZero: nu există povești pentru căutarea realizată
     home:
-        main: Cronologie povești
+        main: Cronologia poveștilor
         secondaryAll: toate poveștile
         secondary: povești
     stories:
