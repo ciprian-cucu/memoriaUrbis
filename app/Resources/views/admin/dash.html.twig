@@ -1,0 +1,130 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<header class="header" >
+    {% include 'admin/dashmenu.html.twig' %}
+</header>
+    <!-- Slider main container -->
+    <div id="content">
+        <div class="content-wrap">
+            <header>
+                {% set route = app.request.attributes.get('_route') %}
+                {% set limit = (stories|length / 3)|round() %}
+                {% set limit2 = 2 * limit %}
+                <h2> Dashboard welcome  </h2>
+            </header>
+
+            <section class="admin-story first">
+                <h2 class="panel-title">Povești 1 - {{ limit }} </h2>
+                <article>
+                    <table class="table">
+                        <tr>
+                            <th>Nr. </th>
+                            <th>Anul </th>
+                            <th>Titlu </th>
+                        </tr>
+                        <tbody>
+                            {% for story in stories|slice(0,limit-1) %}
+
+                                <tr class="list-entry">
+                                    <td>{{ story.storyOrder }}</td>
+                                    <td><p class="year">{{ story.year0 }}</p></td>
+                                    <td>
+                                        <p class="story-title">
+                                            <a href="{{ path('admin_story_edit', {'no': story.storyOrder}) }}">{{ story.title|raw }}</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+            <section class="admin-story">
+                <h2 class="panel-title">Povești {{ limit+1 }} - {{ 2 * limit }}</h2>
+                <article>
+                    <table class="table">
+                        <tr>
+                            <th>Nr. </th>
+                            <th>Anul </th>
+                            <th>Titlu </th>
+                        </tr>
+                        <tbody>
+                            {% for story in stories|slice(limit-1, limit) %}
+
+                                <tr class="list-entry">
+                                    <td>{{ story.storyOrder }}</td>
+                                    <td><p class="year">{{ story.year0 }}</p></td>
+                                    <td>
+                                        <p class="story-title">
+                                            <a href="{{ path('admin_story_edit', {'no': story.storyOrder}) }}">{{ story.title|raw }}</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+            <section class="admin-story">
+                <h2 class="panel-title">Povești {{ 2*limit+1 }} - ... </h2>
+                <article>
+                    <table class="table">
+                        <tr>
+                            <th>Nr. </th>
+                            <th>Anul </th>
+                            <th>Titlu </th>
+                        </tr>
+                        <tbody>
+                            {% for story in stories[2*limit-1:] %}
+
+                                <tr class="list-entry">
+                                    <td>{{ story.storyOrder }}</td>
+                                    <td><p class="year">{{ story.year0 }}</p></td>
+                                    <td>
+                                        <p class="story-title">
+                                            <a href="{{ path('admin_story_edit', {'no': story.storyOrder}) }}">{{ story.title|raw }}</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+
+
+
+
+
+            </div>
+        <div id="footer">
+            <article id="proiect">
+                    <img id="img0" src=" {{ asset('bundles/app/images/logoAlba.png') }} " >
+                    {{ 'footer.projectDescription' | trans | raw }}
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script src="{{ asset('bundles/app/js/custom.js') }}"></script>
+{% endblock %}

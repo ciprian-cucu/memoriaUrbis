@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<header class="header" >
+    {% include 'admin/dashmenu.html.twig' %}
+</header>
+    <!-- Slider main container -->
+    <div id="content">
+        <div class="content-wrap admin">
+            <header>
+                {% set route = app.request.attributes.get('_route') %}
+                <h2> Dashboard welcome  </h2>
+            </header>
+            <section>
+                    {{ form_start(form) }}
+                    {% for message in app.flashes('success') %}
+                    <div class="flash-notice">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                        {{ form_errors(form) }}
+
+                        {{ form_row(form.notes) }}
+
+                        {{ form_row(form.story) }}
+                        {{ form_row(form.file) }}
+
+
+
+                        <button type="submit" class="buton">submit </button>
+
+                    {{ form_end(form) }}
+            </section>
+
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script src="{{ asset('bundles/app/js/custom.js') }}"></script>
+{% endblock %}

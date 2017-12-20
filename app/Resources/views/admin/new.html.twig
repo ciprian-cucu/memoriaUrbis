@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<header class="header" >
+    {% include 'admin/dashmenu.html.twig' %}
+</header>
+    <!-- Slider main container -->
+    <div id="content">
+        <div class="content-wrap admin">
+            <header>
+                {% set route = app.request.attributes.get('_route') %}
+                <h2> Dashboard welcome  </h2>
+            </header>
+            <section>
+                {% for message in app.flashes('success') %}
+                <div class="flash-notice">
+                    {{ message }}
+                </div>
+                {% endfor %}
+                    {{ form_start(form) }}
+                        {{ form_errors(form) }}
+
+                        <div class="adminCol">
+                            {{ form_row(form.title) }}
+                            {{ form_row(form.abstract) }}
+                            {{ form_row(form.text) }}
+
+                        </div>
+                        <div class="adminCol">
+                            {{ form_row(form.year0) }}
+                            {{ form_row(form.storyOrder) }}
+                            {{ form_row(form.longitude) }}
+                            {{ form_row(form.latitude) }}
+
+                            <h3>Photos</h3>
+                            <ul class="photos" data-prototype="{{ form_row(form.photos.vars.prototype)|e('html_attr')}}">
+                                {# iterate over each existing tag and render its only field: name #}
+                                {% for photo in form.photos %}
+                                    <li>{{ form_row(photo.file) }}</li>
+                                {% endfor %}
+                            </ul>
+
+                            {{ form_row(form.author) }}
+                        </div>
+
+
+
+
+                        <button type="submit" class="buton">submit </button>
+
+                    {{ form_end(form) }}
+            </section>
+
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script src="{{ asset('bundles/app/js/admin.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,23 @@
+
+{% set route = app.request.attributes.get('_route') %}
+<div class="wrap">
+
+    <div id="logo"><img src="{{ asset('bundles/app/images/logo.png') }}" alt="memoria urbis logo" ></div>
+    <nav>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="{{ path('admin') }}" {{ route == 'admin' ? 'class="active"' }}> ADMIN </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ path('admin_story_add') }}" {{ route == 'admin_story_add' ? 'class="active"' }}> ADAUGA POVESTE </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ path('admin_photo_add') }}" {{ route == 'admin_photo_add' ? 'class="active"' }}> ADAUGA IMAGINE </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ path('logout') }}"> LOGOUT </a>
+            </li>
+        </ul>
+        <div class="responsive-nav-close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
+    </nav>
+</div>
