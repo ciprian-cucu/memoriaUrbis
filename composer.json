@@ -18,7 +18,7 @@
     },
     "require": {
         "php": ">=5.5.9",
-        "symfony/symfony": "3.2.*",
+        "symfony/symfony": "3.4.0",
         "doctrine/orm": "^2.5",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/doctrine-cache-bundle": "^1.2",
@@ -29,7 +29,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "doctrine/doctrine-fixtures-bundle": "^2.3",
-        "symfony/translation": "~2.8.26",
+        "symfony/translation": "3.4.0",
         "symfony/yaml": "^3.3",
         "symfony/config": "~3.2",
         "twig/extensions": "^1.5"

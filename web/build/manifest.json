@@ -1,6 +1,7 @@
 {
+  "build/admin.js": "/build/admin.js",
   "build/app.js": "/build/app.js",
   "build/custom.css": "/build/custom.css",
-  "build/images/search-gray.png": "/build/images/search-gray.png",
-  "build/images/search-white.png": "/build/images/search-white.png"
+  "build/images/search-gray.png": "/build/images/search-gray.cc3afaab.png",
+  "build/images/search-white.png": "/build/images/search-white.80e3e668.png"
 }

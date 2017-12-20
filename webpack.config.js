@@ -13,6 +13,8 @@ Encore
 
     // will output as web/build/app.js
     .addEntry('app', './src/AppBundle/Resources/public/js/custom.js')
+    .addEntry('admin', './src/AppBundle/Resources/public/js/admin.js')
+
 
     // will output as web/build/custom.css
     .addStyleEntry('custom', './src/AppBundle/Resources/public/css/custom.scss')

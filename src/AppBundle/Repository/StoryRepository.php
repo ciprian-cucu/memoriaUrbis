@@ -29,6 +29,26 @@ class StoryRepository extends EntityRepository
         return $query->getResult();
     }
 
+    public function findLarger ($no) {
+        $db = $this->createQueryBuilder('s')
+            ->andWhere('s.storyOrder >= :val')
+            ->setParameter('val', $no);
+        $query = $db->getQuery();
+
+        return $query->getResult();
+    }
+
+    public function findBetween ($no1,$no2) {
+        $db = $this->createQueryBuilder('s')
+            ->andWhere('s.storyOrder >= :val1')
+            ->andWhere('s.storyOrder >= :val2')
+            ->setParameter('val1', $no1)
+            ->setParameter('val2', $no2);
+        $query = $db->getQuery();
+
+        return $query->getResult();
+    }
+
 
 
 }

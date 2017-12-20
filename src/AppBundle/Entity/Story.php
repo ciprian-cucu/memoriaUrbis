@@ -58,9 +58,9 @@ class Story
     private $lastUpdate;
 
     /**
-     * @var decimal
+     * @var integer
      *
-     * @ORM\Column(name="story_order", type="decimal", precision=4, scale=1, nullable=true)
+     * @ORM\Column(name="story_order", type="integer", nullable=true)
      */
     private $storyOrder;
 
@@ -105,7 +105,7 @@ class Story
     /**
      * @var photos
      *
-     * @ORM\OneToMany(targetEntity="Photo", mappedBy="story")
+     * @ORM\OneToMany(targetEntity="Photo", mappedBy="story", orphanRemoval=true, cascade={"persist"})
      */
     private $photos;
 

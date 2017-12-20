@@ -299,6 +299,7 @@ section#story {
 }
 
 
+
 section#gallery {
     width: 100%; float: none;
     @include for-tablet-landscape-up {
@@ -448,6 +449,8 @@ section#list {
     }
 
 }
+
+
 
 .panel-title > a {color: inherit;}
 
@@ -648,4 +651,84 @@ input::-webkit-input-placeholder {
     #logo {float: right; padding: 20px 0px; width: 150px; position: initial;}
     .swiper-container {width: 90%; margin: 0px auto;}
     .swiper-container .panel-heading{min-height: 55px;}
+}
+
+//admin and login
+
+.login {
+    background-color: $color-active;
+    padding: 40px;
+    h1 {
+        color: #fff;
+    }
+
+    div {
+        margin-bottom: 10px;
+        input {
+            height: 30px;
+        }
+    }
+}
+
+.buton {
+    display: block;
+    padding: 10px;
+    margin-top:10px;
+    background-color: $color-main-transparent;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 14px;
+    font-variant: small-caps;
+    border: none;
+}
+.buton:hover {
+    text-decoration: none;
+    background-color: $color-active;
+    cursor: pointer;
+}
+
+.eroare {
+    color: #FFF;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.admin form {
+    width: 100%;
+    label {color: $color-main;}
+    div {width: 100%; margin-bottom: 10px;}
+    input, textarea, select {width: 100%; padding: 8px}
+    textarea {height: 250px}
+    div.adminCol {width: 48%; float:left; margin-right: 10px;}
+    button {clear: both}
+}
+
+
+
+section.admin-story {
+    h2.panel-title {
+        width: 100%;
+        padding: 10px;
+        background: #FFFD98;
+    }
+    &.first{
+        padding:0px;
+        margin:0px;
+        border: none;
+    }
+    width: 100%;
+    float: none;
+    table td {padding: 4px 0px 2px 4px}
+    tr th {background: $color-active; color: #fff;}
+    tr th:first-of-type {width: 40px}
+    tr th:nth-of-type(2) {width: 60px}
+    tr:nth-child(even) { background: rgba(51,51,51,0.1)}
+    a {color: $color-main;}
+    @include for-tablet-portrait-up {
+      width: 32%; float: left;
+      padding-left: 10px;
+      border-left: 2px solid $color-active;
+      margin-left: 10px;
+      }
 }

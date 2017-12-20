@@ -3,12 +3,15 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 /**
  * Photo
  *
  * @ORM\Table(name="photo", indexes={@ORM\Index(name="fk_photos_1_idx", columns={"story"})})
  * @ORM\Entity
+ * @ORM\HasLifecycleCallbacks()
  */
 class Photo
 {
@@ -22,6 +25,12 @@ class Photo
     private $id;
 
     /**
+     * @Assert\Image(
+     *     minWidth = 450,
+     *     maxWidth = 2100,
+     *     mimeTypes = {"image/jpeg", "image/png"},
+     *     mimeTypesMessage = "Nu puteti adauga fisiere de acest tip (permise doar jpg si png)"
+     * )
      * @var string
      *
      * @ORM\Column(name="file", type="string", length=255, nullable=false)
