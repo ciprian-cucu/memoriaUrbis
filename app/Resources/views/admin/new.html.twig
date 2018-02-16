@@ -25,6 +25,7 @@
                             {{ form_row(form.abstract) }}
                             {{ form_row(form.text) }}
 
+
                         </div>
                         <div class="adminCol">
                             {{ form_row(form.year0) }}
@@ -60,4 +61,22 @@
     {{ parent() }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
     <script src="{{ asset('bundles/app/js/admin.js') }}"></script>
+    <script src="{{ asset('bundles/ivoryckeditor/ckeditor.js') }}"></script>
+    <script>
+        // Replace the <textarea id="editor1"> with a CKEditor
+        // instance, using default configuration.
+        CKEDITOR.replace( 'story_form_text', {
+            // Define the toolbar groups as it is a more accessible solution.
+            toolbarGroups: [
+                {"name":"basicstyles","groups":["basicstyles"]},
+                {"name":"links","groups":["links"]},
+                {"name":"paragraph","groups":["list","blocks"]},
+                {"name":"document","groups":["mode"]},
+                {"name":"styles","groups":["styles"]},
+            ],
+            // Remove the redundant buttons from toolbar groups defined above.
+            removeButtons: 'Save,NewPage,Preview,Print,Underline,Strike,Subscript,Superscript,Anchor,Styles,Specialchar'
+        } );
+    </script>
+
 {% endblock %}

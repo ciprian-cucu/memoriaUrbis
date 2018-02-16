@@ -230,10 +230,15 @@ class DefaultController extends Controller
         if ($locale != 'ro') {
             foreach ($stories as $story) {
                 $titleTrans = DefaultController::getTranslation($locale,'story',$story->getId(),'title');
+
                 $abstractTrans = DefaultController::getTranslation($locale,'story',$story->getId(),'abstract');
+
                 $story->setTitle($titleTrans);
                 $story->setAbstract($abstractTrans);
+
+
             }
+
 
         }
 
@@ -330,7 +335,7 @@ class DefaultController extends Controller
             ->orderBy('s.storyOrder', 'ASC')
             ->getQuery();
         $storyPositionsTemp = $query->getResult();
-        
+
         $storyPositions = [];
         foreach ($storyPositionsTemp as $position) {
             $storyPositions[]=$position['storyOrder'];
@@ -355,6 +360,7 @@ class DefaultController extends Controller
         $locale = $request->getLocale();
         if ($locale != 'ro') {
             $titleTrans = DefaultController::getTranslation($locale,'story',$story[0]->getId(),'title');
+
             $story[0]->setTitle($titleTrans);
             $abstractTrans = DefaultController::getTranslation($locale,'story',$story[0]->getId(),'abstract');
             $story[0]->setAbstract($abstractTrans);
